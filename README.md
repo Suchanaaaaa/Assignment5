@@ -43,6 +43,13 @@ The `key` prop helps React identify which items have changed, been added, or rem
 ### 6. What is conditional rendering? Show one place you used it.
 Conditional rendering means showing different UI elements based on specific conditions. 
 **Example:** Displaying an empty stack message when no items are selected:
+
+###7. How do you pass data from parent to child, and child back to parent?
+
+ Parent to Child: Data is passed down via Props.
+
+Child to Parent: The parent passes a callback function as a prop to the child. When an event happens in the child, it invokes that function and sends data back as arguments.
+
 ```jsx
 {selectedStack.length === 0 ? (
   <p>No technologies selected yet.</p>
@@ -50,8 +57,4 @@ Conditional rendering means showing different UI elements based on specific cond
   <StackList items="{selectedStack}"/>
 )}
 
-###7. How do you pass data from parent to child, and child back to parent?
 
- Parent to Child: Data is passed down via Props.
-
-Child to Parent: The parent passes a callback function as a prop to the child. When an event happens in the child, it invokes that function and sends data back as arguments.
