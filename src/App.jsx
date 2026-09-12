@@ -51,6 +51,7 @@ export default function App() {
     setSelected((previous) => previous.filter((item) => item.id !== technologyId));
     if (removed) toast.info(`${removed.name} removed.`);
   };
+  
 
   const clearStack = () => {
     if (!selected.length) return;

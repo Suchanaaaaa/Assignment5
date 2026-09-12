@@ -1,5 +1,4 @@
 import React from 'react';
-
 const Hero = () => {
   return (
     <div className="flex flex-col md:flex-row justify-between items-stretch gap-8 my-12 px-6 max-w-7xl mx-auto">
