@@ -49,6 +49,7 @@ Conditional rendering means showing different UI elements based on specific cond
 ) : (
   <StackList items="{selectedStack}"/>
 )}
+```
 
 
 ### 7. How do you pass data from parent to child, and child back to parent?
