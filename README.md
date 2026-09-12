@@ -54,9 +54,7 @@ Conditional rendering means showing different UI elements based on specific cond
 
 ### 7. How do you pass data from parent to child, and child back to parent?
 
- Parent to Child: Data is passed down via Props.
+Parent to Child: Data is passed down directly using Props. The parent component defines an attribute on the child component tag and assigns the value or object to it.
 
-Child to Parent: The parent passes a callback function as a prop to the child. When an event happens in the child, it invokes that function and sends data back as arguments.
-
-
+Child to Parent: The child sends data back by calling a callback function that was passed down to it as a prop by the parent. When an event occurs in the child, it triggers this function and passes the updated data or payload back as an argument.
 
