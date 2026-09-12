@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 import Header from './components/Header';
@@ -51,7 +51,6 @@ export default function App() {
     setSelected((previous) => previous.filter((item) => item.id !== technologyId));
     if (removed) toast.info(`${removed.name} removed.`);
   };
-  
 
   const clearStack = () => {
     if (!selected.length) return;
@@ -63,8 +62,7 @@ export default function App() {
     <div className="app">
       <Header />
       <main>
-        <Hero />
-
+        {/* 1. Technologies Section */}
         <section className="section technologies-section" id="technologies">
           <header className="section-heading">
             <h2>Explore the <span>Technologies</span></h2>
@@ -100,6 +98,12 @@ export default function App() {
           </div>
         </section>
 
+        {/* 2. Hero Component (About Dev Stack & Contact section placed below Technologies) */}
+        <section className="section about-section" id="about">
+          <Hero />
+        </section>
+
+        {/* 3. Projects Info Section */}
         <section className="section info-section" id="projects">
           <div className="info-card">
             <div>
@@ -111,24 +115,6 @@ export default function App() {
               </p>
             </div>
             <a className="outline-button" href="#technologies">Choose Technologies</a>
-          </div>
-        </section>
-
-        <section className="section about-section" id="about">
-          <div className="about-copy">
-            <span className="eyebrow">ABOUT DEV STACK</span>
-            <h2>A simple way to plan your next development stack.</h2>
-            <p>
-              Dev Stack is a lightweight React interface for discovering technologies
-              and collecting the tools you want to work with together.
-            </p>
-          </div>
-
-          <div className="contact-card" id="contact">
-            <span className="eyebrow">CONTACT</span>
-            <h3>Have an idea?</h3>
-            <p>Explore your options with the stack builder and start creating.</p>
-            <a className="gradient-button" href="mailto:hello@devstack.example">Get in touch</a>
           </div>
         </section>
       </main>
