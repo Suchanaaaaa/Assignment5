@@ -62,7 +62,10 @@ export default function App() {
     <div className="app">
       <Header />
       <main>
-        {/* 1. Technologies Section */}
+        {/* 1. Main Hero Banner (Build Your Ideal Development Stack) */}
+        <Hero />
+
+        {/* 2. Technologies Section */}
         <section className="section technologies-section" id="technologies">
           <header className="section-heading">
             <h2>Explore the <span>Technologies</span></h2>
@@ -98,11 +101,6 @@ export default function App() {
           </div>
         </section>
 
-        {/* 2. Hero Component (About Dev Stack & Contact section placed below Technologies) */}
-        <section className="section about-section" id="about">
-          <Hero />
-        </section>
-
         {/* 3. Projects Info Section */}
         <section className="section info-section" id="projects">
           <div className="info-card">
@@ -115,6 +113,24 @@ export default function App() {
               </p>
             </div>
             <a className="outline-button" href="#technologies">Choose Technologies</a>
+          </div>
+        </section>
+
+        {/* 4. About Dev Stack Section (Now Below Technologies) */}
+        <section className="section about-section" id="about">
+          <div className="about-copy">
+            <span className="eyebrow">ABOUT DEV STACK</span>
+            <h2>Empowering developer choices for modern tech stacks.</h2>
+            <p>
+              Dev Stack streamlines how software engineers discover, evaluate, and assemble their ideal technology ecosystems. Effortlessly curate frameworks, databases, and developer tools to build high-performance applications.
+            </p>
+          </div>
+
+          <div className="contact-card" id="contact">
+            <span className="eyebrow">CONTACT</span>
+            <h3>Ready to build?</h3>
+            <p>Connect with us to customize your stack or get expert guidance for your next major project.</p>
+            <a className="gradient-button" href="mailto:hello@devstack.example">Get in touch</a>
           </div>
         </section>
       </main>
